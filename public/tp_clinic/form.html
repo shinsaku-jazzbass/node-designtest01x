@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>病院・歯科医院（クリニック）サイト向け 無料ホームページテンプレート tp_clinic6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="trigger-point">
+
+<header>
+
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="東京横浜サンプル医院"></a></h1>
+
+<div class="banner">
+<a href="#"><img src="images/banner1.jpg" alt=""></a>
+</div>
+
+<address>
+<div class="tel">03-0000-0000</div>
+<span class="small">受付時間：AM9:00〜PM7:00</span>
+</address>
+
+<!--文字サイズ変更ボタン-->
+<div id="f-size">
+<p>文字サイズ</p>
+<ul>
+<li id="f-small"></li>
+<li id="f-large"></li>
+</ul>
+</div>
+
+</header>
+
+</div>
+<!--/#trigger-point-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム<span>Home</span></a></li>
+<li><a href="info.html">当院について<span>Information</span></a>
+	<ul>
+	<li><a href="info.html#link1">当院について</a></li>
+	<li><a href="info.html#link2">初診の方へ</a></li>
+	<li><a href="info.html#link3">院長挨拶</a></li>
+	</ul>
+</li>
+<li><a href="service.html">診療科目<span>Medical Service</span></a>
+	<ul>
+	<li><a href="service2.html">一般内科</a></li>
+	<li><a href="service2.html">小児科</a></li>
+	<li><a href="service2.html">皮膚科</a></li>
+	</ul>
+</li>
+<li><a href="staff.html">スタッフ紹介<span>Staff</span></a></li>
+<li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
+<li><a href="access.html">アクセス<span>Access</span></a></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<div id="contents">
+
+<main class="column">
+
+<div class="main-contents">
+
+<section>
+
+<form>
+
+<h2><span class="uline">お問い合わせ</span><span class="small">Contact</span></h2>
+
+<!-- フォームの情報はここからです -->
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="form">
+<table class="ta1">
+<!-- 入力／確認 -->
+<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+<tr>
+<th width="150">お名前<span style="color:red">※</span></th>
+<td>
+<input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
+</td>
+</tr>
+<tr>
+<th width="150">メールアドレス<span style="color:red">※</span></th>
+<td>
+<input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
+</td>
+</tr>
+<tr>
+<th>お問い合わせ内容<span style="color:red">※</span></th>
+<td>
+<textarea name="item3" cols="40" rows="10" class="wl"><?php echo $form["item3"]; ?></textarea>
+<?php if ($msg["item3"]) echo '<div style="color:red">' . $msg["item3"] . '</div>'; ?>
+</td>
+</tr>
+</table>
+
+<p class="c">
+<input type="submit" value="内容を確認する">
+&nbsp;
+<input type="reset" value="リセット">
+</p>
+
+</form>
+<!-- フォームの情報はここまでです -->
+
+</section>
+
+</div>
+<!--/.main-contents-->
+
+<div class="sub-contents">
+
+<nav>
+<h3>メニュータイトル</h3>
+<ul class="submenu">
+<li><a href="index.html">ホーム</a></li>
+<li><a href="info.html">当院について</a>
+	<ul>
+	<li><a href="info.html#link1">当院について</a></li>
+	<li><a href="info.html#link2">初診の方へ</a></li>
+	<li><a href="info.html#link3">院長挨拶</a></li>
+	</ul>
+</li>
+<li><a href="service.html">診療科目</a>
+	<ul>
+	<li><a href="service2.html">一般内科</a></li>
+	<li><a href="service2.html">小児科</a></li>
+	<li><a href="service2.html">皮膚科</a></li>
+	</ul>
+</li>
+<li><a href="staff.html">スタッフ紹介</a></li>
+<li><a href="faq.html">よく頂く質問</a></li>
+<li><a href="access.html">アクセス</a></li>
+<li><a href="recruit.html">採用情報</a></li>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/.sub-contents-->
+
+</main>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<div id="footer-contents">
+
+<div class="left">
+
+<h3>東京横浜サンプル医院</h3>
+<p>〒000-0000 東京足立区XXXXXX1丁目1号<br>
+代表電話：000-0000-0000<br>
+受付時間：月曜日から金曜日の8時から18時まで</p>
+
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+<h3>診療時間</h3>
+<table class="ta2">
+<tr>
+<th>&nbsp;</th>
+<th>月</th>
+<th>火</th>
+<th>水</th>
+<th>木</th>
+<th>金</th>
+<th>土</th>
+<th>日</th>
+</tr>
+<tr>
+<td>午前</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>午後</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</table>
+<p class="mini">午前診療受付　8:30〜12:30　午後診療受付　2:30〜6:30</p>
+
+</div>
+<!--/.left-->
+
+<div class="right">
+
+<h3>アクセス</h3>
+<p><a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+<div class="iframe-box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+	
+</div>
+<!--/.right-->
+
+</div>
+<!--/#footer-contents-->
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">東京横浜サンプル医院</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<div class="menu-icon">
+<span></span><span></span><span></span>
+</div>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--文字サイズチェンジ用のスクリプト-->
+<script src="js/fontSizeChanger.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>

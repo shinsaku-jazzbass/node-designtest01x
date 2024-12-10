@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>病院・歯科医院（クリニック）サイト向け 無料ホームページテンプレート tp_clinic6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="trigger-point">
+
+<header>
+
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="東京横浜サンプル医院"></a></h1>
+
+<div class="banner">
+<a href="#"><img src="images/banner1.jpg" alt=""></a>
+</div>
+
+<address>
+<div class="tel">03-0000-0000</div>
+<span class="small">受付時間：AM9:00〜PM7:00</span>
+</address>
+
+<!--文字サイズ変更ボタン-->
+<div id="f-size">
+<p>文字サイズ</p>
+<ul>
+<li id="f-small"></li>
+<li id="f-large"></li>
+</ul>
+</div>
+
+</header>
+
+</div>
+<!--/#trigger-point-->
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム<span>Home</span></a></li>
+<li><a href="info.html">当院について<span>Information</span></a>
+	<ul>
+	<li><a href="info.html#link1">当院について</a></li>
+	<li><a href="info.html#link2">初診の方へ</a></li>
+	<li><a href="info.html#link3">院長挨拶</a></li>
+	</ul>
+</li>
+<li><a href="service.html">診療科目<span>Medical Service</span></a>
+	<ul>
+	<li><a href="service2.html">一般内科</a></li>
+	<li><a href="service2.html">小児科</a></li>
+	<li><a href="service2.html">皮膚科</a></li>
+	</ul>
+</li>
+<li><a href="staff.html">スタッフ紹介<span>Staff</span></a></li>
+<li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
+<li><a href="access.html">アクセス<span>Access</span></a></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<div id="contents">
+
+<main>
+
+<section>
+
+<h2><span class="uline">当テンプレートの使い方</span></h2>
+
+<h3>titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</h3>
+<p>まず、htmlソースが見れる状態にして、<br>
+<span class="look">&lt;title&gt;病院・歯科医院（クリニック）サイト向け 無料ホームページテンプレート tp_clinic6&lt;/title&gt;</span><br>
+を編集しましょう。<br>
+あなたのホームページ名が「東京横浜サンプル医院」だとすれば、<br>
+<span class="look">&lt;title&gt;東京横浜サンプル医院&lt;/title&gt;</span><br>
+とすればＯＫです。SEO対策もするなら冒頭に重要なワードを入れておきましょう。</p>
+<h3>copyrightを変更しましょう。</h3>
+<p>続いてhtmlの下の方にある、<br>
+<span class="look">Copyright&copy; 東京横浜サンプル医院 All Rights Reserved.</span><br>
+の部分もあなたのサイト名に変更します。</p>
+<h3>metaタグを変更しましょう。</h3>
+<p>htmlソースが見える状態にしてmetaタグを変更しましょう。</p>
+<p>ソースの上の方に、<br>
+<span class="look">content=&quot;ここにサイト説明を入れます&quot;</span><br>
+という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もありますので、見た人が来訪したくなるような説明文を簡潔に書きましょう。</p>
+<h3>h1ロゴのaltタグも変更しましょう</h3>
+<p>html側に、<br>
+<span class="look">alt=&quot;東京横浜サンプル医院&quot;</span><br>
+となっている箇所があるので、この部分もあなたのサイト名に変更しましょう。</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">テンプレートの色変更について</span></h2>
+<p>全体のカラー変更は簡単にできます。</p>
+<p>cssフォルダのstyle.cssを開き、冒頭の、<br>
+<span class="look">:root {</span><br>
+の中にある、<br>
+<span class="look">--primary-color:<br>
+〜〜〜</span><br>
+他数行の設定を変更すればサイト全体の色変更ができます。</p>
+<p>※必要に応じてテーブルやカラムブロック内の調整が必要になる場合もあります。</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">文字サイズ「小」「大」について</span></h2>
+<p><strong class="color-theme">「小」「大」の文字サイズを変更したい場合</strong><br>
+cssフォルダのstyle.cssの冒頭にある、<br>
+<span class="look">/*文字サイズの設定</span><br>
+の所でそれぞれ指定しています。お好みで変更して頂いて構いません。</p>
+<p><strong class="color-theme">「大」をデフォルトにしたい場合</strong><br>
+jsフォルダのfontSizeChanger.jsを開き、中のコメントを読んで変更して下さい。</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">アイコン画像について（Font Awesomeの解説）</span></h2>
+<h3>imagesフォルダに入っていない画像（アイコン）は全てFont Awesomeの素材です。</h3>
+<p><a href="https://fontawesome.com/" target="_blank">Font Awesome 公式サイト</a><br>
+<a href="https://fontawesome.com/v6/search" target="_blank">Font Awesome アイコン一覧（※バージョン6）</a></p>
+<p>iタグを使ってhtmlに直接アイコンを読み込む場合と、cssの擬似要素を使って読み込む場合があります。<br>
+それぞれ他のアイコンに置き換えたい場合は、当サイトの<a href="https://template-party.com/tips/tips20211126_font_awesome.html">マニュアル</a>をお読み下さい。</p>
+<h3>Font Awesomeを使う為に必要なタグ、ファイル類。</h3>
+<p>cssフォルダのstyle.css冒頭で読み込んでいる「Font Awesomeの読み込み」のブロック。</p>
+<h3>何年も経過した場合、動作に問題が出てくる可能性があります。</h3>
+<p>テンプレートを編集していないのに突然動きがおかしくなった場合は、style.cssの冒頭でCDNから読み込んでいるFont Awesome関連のファイルのバージョンを変更して動作するか確認してみて下さい。</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">上部メニューについて</span></h2>
+<p>画面幅が900px以下で、メインメニューが開閉ブロックタイプになります。<br>
+この数値を変更したい場合は、jsフォルダのmain.jsの、<br>
+<span class="look">if(window.innerWidth &lt;= <span class="color-check">900</span>)</span><br>
+の、<span class="color-check">900</span>の数値を変更して下さい。
+</p>
+
+<h3>ドロップダウンメニューについて</h3>
+<p>「当院について」や「診療科目」メニューにはドロップダウンメニューが設定されています。<br>
+ドロップダウンを使う為の特別な設定は不要ですが、必ず親となるli要素の「中」に入れるようにして下さい。</p> 
+<h3>OKな例</h3>
+<p><span class="look">
+<span class="color-check">&lt;li&gt;&lt;a href=&quot;&quot;&gt;親となるメニュー&lt;/a&gt;</span><br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+<span class="color-check">&lt;/li&gt;</span>
+</span>
+</p>
+<h3>NGな例</h3>
+<p><span class="look">
+<span class="color-check">&lt;li&gt;&lt;a href=&quot;&quot;&gt;親となるメニュー&lt;/a&gt;&lt;/li&gt;</span><br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;
+</span>
+</p>
+</section>
+
+<section>
+
+<h2><span class="uline">trigger-pointブロックについて（※重要）</span></h2>
+<p>当テンプレートでは、メニューが画面上部に到達した際にfixed的にとどまるようになっています。<br>
+とどまるだけならcssで対応できるのですが、到達したあとに透明度を変化させたり高さを圧縮したりする為の判断を、このtrigger-pointブロックが行っていますので、うっかり削除しないように注意して下さい。</p>
+<p>このtrigger-pointについては、メインメニューのブロックの「上」にある要素「全て」を囲むようにして下さい。</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">トップページのスライドショー画像について</span></h2>
+
+<p>cssフォルダのslide.cssおよび、jsフォルダのmain.jsにスライドショーのスタイル設定があります。<br>
+slide.cssでは画像の指定や画像が切り替わるフェードのスピードなどの調整ができます。<br>
+main.jsでは、スライドショーの１枚あたりの表示時間の変更ができます。<br>
+枚数を追加しても自動で読み込んでくれるので特に設定は不要ですが、容量が大きすぎたり枚数が多すぎたりすると初動がガタつく可能性があるので注意して下さい。</p>
+<h3>2:1のアスペクト比率の背景画像をレスポンシブ化しています</h3>
+<p>サンプルテンプレートでは、2:1の画像がレスポンシブになるようcssで設定されています。<br>
+この比率以外でも問題なく表示されますが、表示されない部分が出てきますので、2:1以外の比率の画像を全部表示させたければ以下を調整して下さい。</p>
+<p>cssフォルダのslide.cssの、<br>
+<span class="look">#mainimg {</span><br>
+の中にある、<br>
+<span class="look">padding-top: 50%;</span><br>
+を調整します。50というのは、1÷2=0.5の事です。<br>
+もし、16:9の画像を使いたければ、9÷16=0.5625<br>
+<span class="look">padding-top: 56%;</span><br>
+と書き直せばOKです。小数点まで入れても構いませんがあまり意味はないのでここでは省いています。</p>
+<h3>スライドショー上のテキストについて</h3>
+<p>html側に直接テキストとして入っていますので入れ替えてご利用下さい。<br>
+テキストの配置については、slide.cssの、justify-contentやtext-alignで調整します。</p>
+<p>どちらの指定もない場合（.slide2）は左寄せになります。</p>
+<p>センタリングしたい場合（.slide1と.slide3）、<br>
+<span class="look">justify-content: center;<br>
+text-align: center;</span><br>
+です。</p>
+<p>右寄せにしたい場合は、<br>
+<span class="look">justify-content: flex-end;<br>
+text-align: right;</span><br>
+と指定すればOKです。</p>
+<h3>スライドショー画像について</h3>
+<p>当サイトで用意したものなのでそのままご利用・編集頂いて問題ございません。<br>
+スライドショー以外のその他の写真もAI出力によるものです。こちらもそのままご利用頂いても構いません。</p>
+<h3>画像を入れ替えたい場合</h3>
+<p>1.jpg〜3.jpgで作る場合はそのままimagesフォルダに画像を上書きすればOKです。拡張子を変えたい場合は、cssフォルダのslide.cssの中で読み込んでいる画像ファイル名を編集して下さい。</p>
+<p>画像は容量が軽くなるようにできるだけ圧縮して下さい。<br>
+容量が大きいと初動がガタつく可能性があります。（※ローカルでは確認できません。サーバーにアップすると分かります。）</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">トップページのサムネイルスライドショーについて</span></h2>
+<p>slickを使ったスラドショーになっています。<a href="https://kenwheeler.github.io/slick/" target="_blank">slick 公式サイト</a><br>
+テンプレート内の解説及び、当サイト上でのマニュアル以外のサポートは基本的には行なっておりませんので、使いこなしたい方はGoogle検索などかけてみて下さい。</p>
+
+<div class="thumbnail-slide mb30">
+
+<img src="images/1.jpg" alt="">
+<img src="images/2.jpg" alt="">
+<img src="images/3.jpg" alt="">
+<img src="images/1.jpg" alt="">
+<img src="images/2.jpg" alt="">
+<img src="images/3.jpg" alt="">
+
+</div>
+<!--/.thumbnail-slide-->
+
+<h3>写真の縦横サイズを予め揃えておくと綺麗に並びます</h3>
+<p>枚数は自由に変更できます。html側に既存の写真ブロックをコピペして新しい画像ファイル名に書き換えて下さい。<br>
+スライドショーの設定は、jsフォルダのslick.jsで調整できます。</p>
+<h3>slickを使う為に必要なタグ、ファイル類</h3>
+<p>1. html下部にある、「jQueryファイルの読み込み」のタグ。※下のjsファイルより先に読み込んで下さい。<br>
+2. その下にある、「スライドショー（slick）」からの数行のタグ。<br>
+3. jsフォルダ内の「js/slick.js」。</p>
+
+</section>
+
+<section>
+
+<h2>トップページの「お知らせ」ブロックのアイコンについて</h2>
+<p>アイコン内のテキストはhtml側で直接入力されていますので必要に応じて編集して下さい。</p>
+<p>背景色は、cssフォルダのstyle.cssの、<br>
+<span class="look">.new dt span</span><br>
+や、<br>
+<span class="look">.new .icon-bg1</span><br>
+のbackgroundでそれぞれ変更できます。</p>
+<p>新しいアイコンを追加したい場合、上記の「.new .icon-bg1」ブロックをコピペし、<span class="color-check">.icon-bg1</span>部分を<span class="color-check">.icon-bg2</span>などに変更し、backgroundに好きな色を設定します。<br>
+後はhtml側で、<br>
+<span class="look">&lt;span class=&quot;<span class="color-check">icon-bg2</span>&quot;&gt;〜〜〜&lt;/span&gt;</span><br>
+などとすればOKです。</p>
+<p>尚、あまり文字数が増えるとレイアウトが崩れるので注意して下さい。</p>
+
+</section>
+
+<section>
+
+<h2><span class="uline">出現アニメーションについて</span></h2>
+<p>以下のような出現のアニメーションサンプルを<a href="sample_inview.html">sample_inview.html</a>にまとめています。<br>
+好きなアニメーションに簡単に変更できますし、オリジナルのものを作る事もできます。</p>
+
+<p><img src="images/1.jpg" alt="" class="blur" width="500"></p>
+<p><img src="images/2.jpg" alt="" class="up" width="500"></p>
+<p><img src="images/3.jpg" alt="" class="transform1" width="500"></p>
+
+</section>
+
+</main>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<div id="footer-contents">
+
+<div class="left">
+
+<h3>東京横浜サンプル医院</h3>
+<p>〒000-0000 東京足立区XXXXXX1丁目1号<br>
+代表電話：000-0000-0000<br>
+受付時間：月曜日から金曜日の8時から18時まで</p>
+
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+<h3>診療時間</h3>
+<table class="ta2">
+<tr>
+<th>&nbsp;</th>
+<th>月</th>
+<th>火</th>
+<th>水</th>
+<th>木</th>
+<th>金</th>
+<th>土</th>
+<th>日</th>
+</tr>
+<tr>
+<td>午前</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>午後</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</table>
+<p class="mini">午前診療受付　8:30〜12:30　午後診療受付　2:30〜6:30</p>
+
+</div>
+<!--/.left-->
+
+<div class="right">
+
+<h3>アクセス</h3>
+<p><a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+<div class="iframe-box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+	
+</div>
+<!--/.right-->
+
+</div>
+<!--/#footer-contents-->
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">東京横浜サンプル医院</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<div class="menu-icon">
+<span></span><span></span><span></span>
+</div>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--文字サイズチェンジ用のスクリプト-->
+<script src="js/fontSizeChanger.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
